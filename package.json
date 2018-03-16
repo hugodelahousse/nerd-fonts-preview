@@ -1,5 +1,6 @@
 {
   "name": "nerd-fonts-preview",
+  "homepage" : "http://hugodelahousse.github.io/nerd-fonts-preview",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
