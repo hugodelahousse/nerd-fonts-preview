@@ -8,20 +8,6 @@ export default class Font extends Component {
     super(props);
     this.state = {loaded: false};
     const font_url = encodeURI(`https://rawgit.com/ryanoasis/nerd-fonts/master/${this.props.data.path}`);
-    // let font_style = document.createElement('style');
-    // font_style.type = 'text/css';
-    // font_style.innerText = `@font-face {
-    //   font-family: '${this.props.data.name}';
-    //   font-style: normal;
-    //   font-weight: 400;
-    //   src: local('${this.props.data.name}'), url(${font_url}) format('truetype');
-    // }`;
-    // font_style.onload = () => {
-    //   console.log(`${this.props.name} loaded !`);
-    //   this.setState({loaded: true});
-    // };
-    //
-    // document.head.appendChild(font_style);
     if (document.fonts)
     {
       const font = new FontFace(this.props.data.name, `url(${font_url})`);

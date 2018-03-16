@@ -17,7 +17,7 @@ export default class Fonts extends Component {
         "recursive": 1
       }
     }).then(response => {
-      const template = RegExp(/^patched-fonts\/([^\/]*)\/(Regular\/)?complete\/.*Nerd Font Complete\.ttf/);
+      const template = RegExp(/^patched-fonts\/([^/]*)\/(Regular\/)?complete\/.*Nerd Font Complete\.ttf/);
       let fonts = response.data.tree.filter(file => template.test(file.path));
       fonts.forEach(font => {
         const match = template.exec(font.path);
