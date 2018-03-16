@@ -1,0 +1,38 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: rgb(40, 40, 40);
+}
+
+h1 {
+    font-family: Arial;
+    font-size: 3em;
+}
+
+hr {
+    max-width: 800px;
+    border: none;
+    border-bottom: solid;
+    border-color: rgb(235, 219, 178);
+    border-width: 3px;
+    margin: 2em auto;
+}
+.font-preview {
+    max-width: 95vw;
+    margin: 0 auto;
+}
+
+.loader {
+    margin: 0 auto;
+}
+
+.App {
+    text-align: center;
+    color: rgb(235, 219, 178);
+}
+
+
